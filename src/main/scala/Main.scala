@@ -10,7 +10,7 @@ import akka.stream.ActorMaterializer
 import scala.io.StdIn
 import io.swagger.annotations
 
-object Main {
+object HttpServer {
 
   def main(args: Array[String]) {
 
