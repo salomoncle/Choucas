@@ -21,7 +21,7 @@ object Main {
 
 
     val route =
-      path("fleurs") {
+      path("get") {
         get {
           parameter('name) {(name) =>complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"this is a get request : '$name'")) }
         } ~
@@ -29,7 +29,6 @@ object Main {
             parameter('name) {(name) =>complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"this is a post request : '$name'")) }
           }
       }
-
     val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
 
     println(s"Server online at http://localhost:8080/\nPress RETURN to stop...")
