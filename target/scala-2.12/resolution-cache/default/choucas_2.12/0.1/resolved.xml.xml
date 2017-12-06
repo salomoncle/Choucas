@@ -4,7 +4,7 @@
 		module="choucas_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20171206104409"
+		publication="20171206105450"
 	>
 		<description>
 		Choucas
@@ -32,5 +32,10 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-http_2.12" rev="10.0.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-stream_2.12" rev="2.5.7" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.12" rev="2.5.6" conf="compile->default(compile)"/>
+		<dependency org="io.swagger" name="swagger-scala-module_2.12" rev="1.0.3" conf="compile->default(compile)"/>
+		<dependency org="com.github.swagger-akka-http" name="swagger-akka-http_2.12" rev="0.11.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
