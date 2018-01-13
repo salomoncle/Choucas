@@ -1,14 +1,20 @@
-
+package main
 
 
 import scala.io.StdIn
-import akka.actor.ActorSystem
+import akka.actor.{ActorSystem, Props}
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.server.Directives._
+import akka.routing.SmallestMailboxPool
 import akka.stream.ActorMaterializer
+
+import scalaj.http.{Http => JHttp}
 import scala.io.StdIn
 import io.swagger.annotations
+import main.types.Num
+
+import scala.util.parsing.json._
 
 object HttpServer {
 
@@ -18,16 +24,41 @@ object HttpServer {
     implicit val materializer = ActorMaterializer()
     // needed for the future flatMap/onComplete in the end
     implicit val executionContext = system.dispatcher
+    val list = List.range(0, 5)//9971)
+    val numbers = Num(list)
+    val actorC2C = system.actorOf(SmallestMailboxPool(5).props(Props(campToCamp())), name = "getDataC2C")
+    val actorViso = system.actorOf(SmallestMailboxPool(5).props(Props(visoRando())), name = "getDataViso")
 
+    //
+    // actorViso ! 5
+
+
+    //val url = "https://api.camptocamp.org/outings?offset=0&pl=fr"
+    //val json = JHttp(url).header("content-type", "application/json").asString.body
+    //println(json.toString)
+    //val campToCamp = JSON.parseFull(json.toString).get.asInstanceOf[Map[String, Any]]("documents")
+    //println(campToCamp)
 
     val route =
-      path("get") {
+      path("index") {
         get {
           parameter('name) {(name) =>complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"this is a get request : '$name'")) }
         } ~
           post{
             parameter('name) {(name) =>complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"this is a post request : '$name'")) }
           }
+      } ~ path("getDataC2C"){
+        get {
+            actorC2C ! numbers
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"Collecting data on CamptToCamp"))
+        }
+      } ~ path("getDataViso"){
+        get{
+          parameter('number) { (number) =>
+            actorViso ! number.toInt
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"Collecting data on VisoRando"))
+          }
+        }
       }
     val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
 

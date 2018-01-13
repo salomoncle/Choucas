@@ -4,7 +4,7 @@
 		module="choucas_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20171206105450"
+		publication="20180108152800"
 	>
 		<description>
 		Choucas
@@ -37,5 +37,6 @@
 		<dependency org="com.typesafe.akka" name="akka-actor_2.12" rev="2.5.6" conf="compile->default(compile)"/>
 		<dependency org="io.swagger" name="swagger-scala-module_2.12" rev="1.0.3" conf="compile->default(compile)"/>
 		<dependency org="com.github.swagger-akka-http" name="swagger-akka-http_2.12" rev="0.11.0" conf="compile->default(compile)"/>
+		<dependency org="org.scalaj" name="scalaj-http_2.12" rev="2.3.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

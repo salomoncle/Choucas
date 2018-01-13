@@ -10,4 +10,4 @@ libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.7" // or what
 libraryDependencies += "com.typesafe.akka" %% "akka-actor"  % "2.5.6"
 libraryDependencies += "io.swagger" %% "swagger-scala-module" % "1.0.3"
 libraryDependencies += "com.github.swagger-akka-http" %% "swagger-akka-http" % "0.11.0"
-
+libraryDependencies += "org.scalaj" % "scalaj-http_2.12" % "2.3.0"
