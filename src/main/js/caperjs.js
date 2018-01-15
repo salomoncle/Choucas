@@ -100,14 +100,11 @@ casper.then(function() {
 
         //this.echo(JSON.stringify(rez))
 
-        //Afficher les infos de chaque rando
+        rez['titre'] = Randos[currentRando]['titre']
+        rez['description'] = Randos[currentRando]['description']
+        rez['url'] = Randos[currentRando]['url']
+        this.echo(JSON.stringify(rez))
 
-        if(rez != null) {
-            rez['titre'] = Randos[currentRando]['titre']
-            rez['description'] = Randos[currentRando]['description']
-            rez['url'] = Randos[currentRando]['url']
-            this.echo(JSON.stringify(rez))
-        }
 
         /*
         this.echo("Randonnée : "+rez['titre'])
@@ -134,8 +131,7 @@ casper.then(function() {
         */
 
     });
-    if(i == INPUT_NUMBER)
-        this.echo(JSON.stringify(Data))
+
 
 //this.echo(JSON.stringify(Data))
 
