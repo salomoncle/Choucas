@@ -15,8 +15,7 @@ case class putDataES() extends Actor {
       import com.sksamuel.elastic4s.http.ElasticDsl._
       val client = HttpClient(ElasticsearchClientUri("localhost",9200))
       val response = client.execute{
-        clusterState()
-        //indexInto("choucas/test").doc("{\"title\"=\"toto\"}")
+        indexInto("choucas/test").doc("{\"title\":\"toto\"}")
       }.await
       println(response)
     }
