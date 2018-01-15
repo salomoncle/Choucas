@@ -40,6 +40,7 @@ object HttpServer {
 
 //    val s = URLEncoder.encode("salut ca va")
 //    actorDbp ! Text(s.replace("+", "%20"))
+    val actorES = system.actorOf(SmallestMailboxPool(5).props(Props(putDataES())), name="putDataEs")
 
 
     //val url = "https://api.camptocamp.org/outings?offset=0&pl=fr"
@@ -78,14 +79,8 @@ object HttpServer {
         }
       } ~ path("elastic"){
           get{
-            import com.sksamuel.elastic4s.http.ElasticDsl._
-            val client = HttpClient(ElasticsearchClientUri("localhost",9200))
-            val response = client.execute{
-              clusterState()
-              //indexInto("choucas/test").doc("{\"title\"=\"toto\"}")
-            }.await
+            actorES ! Text("salut ca va ?")
             complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"ELASTIC"))
-
           }
         }
     

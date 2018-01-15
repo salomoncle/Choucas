@@ -17,12 +17,12 @@ case class campToCamp() extends Actor {
       .map(s => s("document_id").asInstanceOf[Int]))
   }
 
-  def getC2CJSON(l : List[Int]) : List[Map[String,Any]]={
-    l.map(v => Source.fromURL("https://api.camptocamp.org/outings/" + v).mkString).map(s=> JSON.parseFull(s).get.asInstanceOf[Map[String,Any]])
+  def getC2CJSON(l : List[Int]) : List[String] = {//Map[String,Any]]={
+    l.map(v => Source.fromURL("https://api.camptocamp.org/outings/" + v).mkString)//.map(s=> JSON.parseFull(s).get.asInstanceOf[Map[String,Any]])
   }
 
   override def receive = {
-    case Pos(x, y) => println(getC2CJSON(getOutingsID(x))(y))//("locales").asInstanceOf[List[Map[String,Any]]])
+    case Num(x) => println(getC2CJSON(getOutingsID(x))(2).toString())//("locales").asInstanceOf[List[Map[String,Any]]])
     case _ => println("error")
   }
 }

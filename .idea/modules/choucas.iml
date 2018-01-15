@@ -22,6 +22,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.12.4:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalactic:scalactic_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.json4s:json4s-scalap_2.12:3.5.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.json4s:json4s-native_2.12:3.5.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.json4s:json4s-core_2.12:3.5.1:jar" level="project" />
@@ -131,8 +132,6 @@
     <orderEntry type="library" name="SBT: org.apache.httpcomponents:httpcore:4.4.5:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.httpcomponents:httpcore-nio:4.4.5:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-1.2-api:2.6.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-api:2.8.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-core:2.6.2:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.lucene:lucene-analyzers-common:6.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.lucene:lucene-backward-codecs:6.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.lucene:lucene-core:6.6.0:jar" level="project" />
@@ -164,7 +163,6 @@
     <orderEntry type="library" name="SBT: org.locationtech.spatial4j:spatial4j:0.6:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-sbt:test-interface:1.0:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scalacheck:scalacheck_2.12:1.13.4:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: org.scalactic:scalactic_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.spire-math:jawn-parser_2.12:0.10.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.typelevel:catalysts-macros_2.12:0.0.5:jar" level="project" />
@@ -180,5 +178,9 @@
     <orderEntry type="library" name="SBT: org.typelevel:discipline_2.12:0.7.2:jar" level="project" />
     <orderEntry type="library" name="SBT: org.typelevel:machinist_2.12:0.6.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.typelevel:macro-compat_2.12:1.1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-api:2.8.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-api-scala_2.12:11.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-core:2.6.2:jar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="SBT: org.apache.logging.log4j:log4j-core:2.8.2:jar" level="project" />
   </component>
 </module>

@@ -4,7 +4,7 @@
 		module="choucas_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180115103709"
+		publication="20180115170642"
 	>
 		<description>
 		Choucas
@@ -53,5 +53,9 @@
 		<dependency org="com.sksamuel.elastic4s" name="elastic4s-json4s_2.12" rev="5.5.3" conf="compile->default(compile)"/>
 		<dependency org="com.sksamuel.elastic4s" name="elastic4s-testkit_2.12" rev="5.5.3" conf="test->default(compile)"/>
 		<dependency org="com.sksamuel.elastic4s" name="elastic4s-embedded_2.12" rev="5.5.3" conf="test->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.5" conf="compile->default(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-api-scala_2.12" rev="11.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-api" rev="2.8.2" conf="compile->default(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.8.2" conf="runtime->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -40,4 +40,10 @@ libraryDependencies ++= Seq(
   "com.sksamuel.elastic4s" %% "elastic4s-embedded" % elastic4sVersion % "test"
 )
 
-//libraryDependencies ++= Seq("org.slf4j" % "slf4j-api" % "1.7.5")
+libraryDependencies ++= Seq("org.slf4j" % "slf4j-api" % "1.7.5")
+
+libraryDependencies ++= Seq(
+  "org.apache.logging.log4j" %% "log4j-api-scala" % "11.0",
+  "org.apache.logging.log4j" % "log4j-api" % "2.8.2",
+  "org.apache.logging.log4j" % "log4j-core" % "2.8.2" % Runtime
+)
