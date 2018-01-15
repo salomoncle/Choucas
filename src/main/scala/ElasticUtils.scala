@@ -5,17 +5,17 @@ import akka.http.scaladsl.model.{ContentTypes, HttpEntity}
 import akka.http.scaladsl.server.Directives.complete
 import com.sksamuel.elastic4s.ElasticsearchClientUri
 import com.sksamuel.elastic4s.http.HttpClient
-import main.types.Text
+import main.types.{Push, Text}
 import com.sksamuel.elastic4s.http.ElasticDsl._
 
 case class putDataES() extends Actor {
 
   override def receive = {
-    case Text(x) => {
+    case Push(path, json) => {
       import com.sksamuel.elastic4s.http.ElasticDsl._
       val client = HttpClient(ElasticsearchClientUri("localhost",9200))
       val response = client.execute{
-        indexInto("choucas/test").doc("{\"title\":\"toto\"}")
+        indexInto(path).doc(json)
       }.await
       println(response)
     }

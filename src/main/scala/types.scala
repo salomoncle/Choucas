@@ -4,4 +4,5 @@ object types {
   case class Num(x : List[Int])
   case class Text(x : String)
   case class Pos(x : List[Int], y : Int)
+  case class Push(json : String, path : String)
 }

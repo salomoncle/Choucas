@@ -13,14 +13,15 @@ import akka.stream.ActorMaterializer
 import akka.util.Timeout
 import com.sksamuel.elastic4s.ElasticsearchClientUri
 import com.sksamuel.elastic4s.http.HttpClient
+
 import scala.concurrent.duration._
 import akka.pattern.ask
-import sys.process._
 
+import sys.process._
 import scalaj.http.{Http => JHttp}
 import scala.io.StdIn
 import io.swagger.annotations
-import main.types.{Num, Text}
+import main.types.{Num, Push, Text}
 
 import scala.concurrent.Await
 import scala.util.parsing.json._
@@ -73,12 +74,12 @@ object HttpServer {
         }
       } ~ path("elastic"){
           get{
-            actorES ! Text("salut ca va ?")
+            actorES ! Push("choucas/test", "{\"title\":\"toto\"}")
             complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"ELASTIC"))
           }
         }
     
-    val bindingFuture = Http().bindAndHandle(route, "localhost", 8081)
+    val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
 
     println(s"Server online at http://localhost:8080/\nPress RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
