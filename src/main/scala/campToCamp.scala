@@ -1,6 +1,6 @@
 package main
 import akka.actor.{Actor, ActorRef}
-import main.types.Num
+import main.types.{Num, Pos}
 
 import scala.io.Source
 import scala.util.parsing.json._
@@ -22,7 +22,7 @@ case class campToCamp() extends Actor {
   }
 
   override def receive = {
-    case Num(x) => println(getC2CJSON(getOutingsID(x))(2)("locales").asInstanceOf[List[Map[String,Any]]])
+    case Pos(x, y) => println(getC2CJSON(getOutingsID(x))(y))//("locales").asInstanceOf[List[Map[String,Any]]])
     case _ => println("error")
   }
 }

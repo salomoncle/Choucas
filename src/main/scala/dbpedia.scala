@@ -4,8 +4,11 @@ import java.net._
 import akka.actor.Actor
 import main.types._
 
-import dispatch.{Defaults, Req, as, implyRequestHandlerTuple, url}
-import dispatch.{Http => dispatchHttp}
+//import dispatch.{Defaults, Req, as, implyRequestHandlerTuple, url}
+//import dispatch._, Defaults._
+//import dispatch.{Http => dispatchHttp}
+import scalaj.http.{Http => JHttp}
+
 
 import scala.concurrent.Future
 import scala.io.StdIn._
@@ -31,16 +34,25 @@ case class dbpedia() extends Actor {
       conn.connect
       //println(Source.fromURL("http://model.dbpedia-spotlight.org/en/annotate?text="+URLEncoder.encode(x, "UTF-8")+"&confidence=0.7&content=application/json").mkString)
       println(Source.fromURL(u))**/
-      val myRequest = url("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.7")
-      def myRequestAsJson = myRequest.addHeader("accept", "application/json")
-      val response = dispatchHttp.default(myRequestAsJson OK dispatch.as.json4s.Json)
-      response onComplete {
-        case Success(json) => {
-          val value = compact(render(json))
-          println(value)
-        }
-        case Failure(error) => println(error)
-      }
+
+
+//      val myRequest = url("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.7")
+//      def myRequestAsJson = myRequest.addHeader("accept", "application/json")
+//      dispatchHttp.apply(dispatchHttp.defaultClientBuilder)
+//      val response = dispatchHttp.default(myRequestAsJson OK dispatch.as.json4s.Json)
+//      response onComplete {
+//        case Success(json) => {
+//          val value = compact(render(json))
+//          println(value)
+//        }
+//        case Failure(error) => println(error)
+//      }
+
+
+
+      val result = JHttp("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.7").header("accept", "application/json").asString
+      println(parse(result.body) \ "@text")
+
     }
     case _ => println("error")
   }

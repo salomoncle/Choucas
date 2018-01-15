@@ -8,15 +8,14 @@ import akka.actor.{ActorSystem, Props}
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.server.Directives._
-import akka.pattern.ask
 import akka.routing.SmallestMailboxPool
 import akka.stream.ActorMaterializer
 import akka.util.Timeout
 import com.sksamuel.elastic4s.ElasticsearchClientUri
 import com.sksamuel.elastic4s.http.HttpClient
-import dispatch.Future
-
 import scala.concurrent.duration._
+import akka.pattern.ask
+
 import scalaj.http.{Http => JHttp}
 import scala.io.StdIn
 import io.swagger.annotations
@@ -38,10 +37,9 @@ object HttpServer {
     val actorC2C = system.actorOf(SmallestMailboxPool(5).props(Props(campToCamp())), name = "getDataC2C")
     val actorViso = system.actorOf(SmallestMailboxPool(5).props(Props(visoRando())), name = "getDataViso")
     val actorDbp = system.actorOf(SmallestMailboxPool(5).props(Props(dbpedia())), name = "dbpedia")
-    /*
-    val s = URLEncoder.encode("salut ca va")
-    actorDbp ! Text(s.replace("+", "%20"))
-    */
+
+//    val s = URLEncoder.encode("salut ca va")
+//    actorDbp ! Text(s.replace("+", "%20"))
 
 
     //val url = "https://api.camptocamp.org/outings?offset=0&pl=fr"
@@ -65,17 +63,17 @@ object HttpServer {
         }
       } ~ path("getDataViso") {
         get {
-            var i=0;
-            var stop = false
-            while (!stop) {
-              implicit val timeout = Timeout(50 seconds)
-              val future = actorViso ? i // enabled by the “ask” import
-              var result = Await.result(future, timeout.duration).asInstanceOf[String]
-              //saveInES(result)
-              if (result == "") stop = true
-              i+=1
-            }
-            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "It's OK"))
+          var i=0;
+          var stop = false
+          while (!stop) {
+            implicit val timeout = Timeout(50 seconds)
+            val future = actorViso ? i // enabled by the “ask” import
+            var result = Await.result(future, timeout.duration).asInstanceOf[String]
+            //saveInES(result)
+            if (result == "") stop = true
+            i+=1
+          }
+          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "It's OK"))
 
         }
       } ~ path("elastic"){
