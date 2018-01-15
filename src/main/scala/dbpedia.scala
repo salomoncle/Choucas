@@ -49,9 +49,8 @@ case class dbpedia() extends Actor {
 //      }
 
 
-
-      val result = JHttp("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.7").header("accept", "application/json").asString
-      println(parse(result.body) \ "@text")
+      val result = JHttp("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.6").header("accept", "application/json").asString
+      println(parse(result.body) \ "Resources")
 
     }
     case _ => println("error")

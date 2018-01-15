@@ -26,10 +26,11 @@ casper.then(function () {
         })
 
         rez['commune']=""
-        Object.keys(json.areas[2].locales).forEach(function (key) {
-            if (json.areas[2].locales[key].lang == "fr")
-                rez['commune']= json.areas[2].locales[key].title
-        })
+        if (json.areas[2])
+            Object.keys(json.areas[2].locales).forEach(function (key) {
+                if (json.areas[2].locales[key].lang == "fr")
+                    rez['commune']=json.areas[2].locales[key].title
+            })
 
 
 

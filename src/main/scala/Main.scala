@@ -21,7 +21,7 @@ import sys.process._
 import scalaj.http.{Http => JHttp}
 import scala.io.StdIn
 import io.swagger.annotations
-import main.types.{Num, Push, Text}
+import main.types._
 
 import scala.concurrent.Await
 import scala.util.parsing.json._
@@ -50,6 +50,8 @@ object HttpServer {
     //println(json.toString)
     //val campToCamp = JSON.parseFull(json.toString).get.asInstanceOf[Map[String, Any]]("documents")
     //println(campToCamp)
+    //actorES ! Search()
+    actorDbp ! Text(URLEncoder.encode("Grand Tour du magnifique et mystérieux Lac Pavin et passant par le Puy de Montchal et le goufre du Creux de Soucy.").replace("+", "%20"))
 
     val route =
       path("index") {
@@ -61,7 +63,7 @@ object HttpServer {
           }
       } ~ path("getDataC2C"){
         get {
-            actorC2C ! numbers
+            actorC2C ! PushC2C("choucas/randos", actorES)
             complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"Collecting data on CamptToCamp"))
         }
       } ~ path("getDataViso") {
@@ -69,12 +71,13 @@ object HttpServer {
           val nbRandos=(Seq("casperjs", "./src/main/js/getNbRandos.js") !!)
           val length = nbRandos.substring(0,3).toInt
           var list = List.range(0, length)
-          list.map(i=> actorViso ! i)
+//          actorViso ! PushInES("viso/test1", actorES, 4)
+          list.map(i=> actorViso ! PushInES("viso/test1", actorES, i))
           complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "YOYO"))
         }
       } ~ path("elastic"){
           get{
-            actorES ! Push("choucas/test", "{\"title\":\"toto\"}")
+//            actorC2C ! Push("choucas/test", "{\"title\":\"toto\"}", actorES)
             complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"ELASTIC"))
           }
         }
