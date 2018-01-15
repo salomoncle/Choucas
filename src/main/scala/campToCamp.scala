@@ -22,7 +22,7 @@ case class campToCamp() extends Actor {
   }
 
   override def receive = {
-    case Num(x) => println(getC2CJSON(getOutingsID(x))(2)("locales").asInstanceOf[List[Map[String,Any]]](0))
+    case Num(x) => println(getC2CJSON(getOutingsID(x))(2)("locales").asInstanceOf[List[Map[String,Any]]])
     case _ => println("error")
   }
 }

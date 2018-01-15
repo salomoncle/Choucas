@@ -4,7 +4,7 @@
 		module="choucas_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180108152800"
+		publication="20180115102407"
 	>
 		<description>
 		Choucas
@@ -38,5 +38,20 @@
 		<dependency org="io.swagger" name="swagger-scala-module_2.12" rev="1.0.3" conf="compile->default(compile)"/>
 		<dependency org="com.github.swagger-akka-http" name="swagger-akka-http_2.12" rev="0.11.0" conf="compile->default(compile)"/>
 		<dependency org="org.scalaj" name="scalaj-http_2.12" rev="2.3.0" conf="compile->default(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" conf="compile->default(compile)"/>
+		<dependency org="net.databinder.dispatch" name="dispatch-core_2.12" rev="0.13.3" conf="compile->default(compile)"/>
+		<dependency org="org.json4s" name="json4s-jackson_2.12" rev="3.2.11" conf="compile->default(compile)"/>
+		<dependency org="org.json4s" name="json4s-ext_2.12" rev="3.2.11" conf="compile->default(compile)"/>
+		<dependency org="net.databinder.dispatch" name="dispatch-json4s-native_2.12" rev="0.13.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-core_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-tcp_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-http_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-streams_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-jackson_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-play-json_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-circe_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-json4s_2.12" rev="5.5.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-testkit_2.12" rev="5.5.3" conf="test->default(compile)"/>
+		<dependency org="com.sksamuel.elastic4s" name="elastic4s-embedded_2.12" rev="5.5.3" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>
