@@ -15,6 +15,7 @@ import com.sksamuel.elastic4s.ElasticsearchClientUri
 import com.sksamuel.elastic4s.http.HttpClient
 import scala.concurrent.duration._
 import akka.pattern.ask
+import sys.process._
 
 import scalaj.http.{Http => JHttp}
 import scala.io.StdIn
@@ -64,18 +65,11 @@ object HttpServer {
         }
       } ~ path("getDataViso") {
         get {
-          var i=0;
-          var stop = false
-          while (!stop) {
-            implicit val timeout = Timeout(50 seconds)
-            val future = actorViso ? i // enabled by the “ask” import
-            var result = Await.result(future, timeout.duration).asInstanceOf[String]
-            //saveInES(result)
-            if (result == "") stop = true
-            i+=1
-          }
-          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "It's OK"))
-
+          val nbRandos=(Seq("/home/eisti/Downloads/casperjs-1.1.4-1/bin/casperjs", "./src/main/js/getNbRandos.js") !!)
+          val length = nbRandos.substring(0,3).toInt
+          var list = List.range(0, length)
+          list.map(i=> actorViso ! i)
+          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "YOYO"))
         }
       } ~ path("elastic"){
           get{
