@@ -202,7 +202,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.elasticsearch.client#rest;5.5.2 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.elasticsearch.client#rest;5.5.2 [compile->master]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.4 {compile=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.4 {compile=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, master(*), compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.4
 [debug] 	found org.scala-lang#scala-library;2.12.4 in sbt-chain
 [debug] 	[2.12.4] org.scala-lang#scala-library;2.12.4
@@ -459,10 +459,11 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->master]
-[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {compile=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], test=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[master(*), compile, runtime(*), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.6
 [debug] 	found org.scala-lang.modules#scala-xml_2.12;1.0.6 in sbt-chain
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(compile)]
@@ -991,11 +992,12 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->master]
-[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.4 {compile=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], test=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[master(*), compile, runtime(*), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.4
 [debug] 	found org.scala-lang#scala-reflect;2.12.4 in sbt-chain
 [debug] 	[2.12.4] org.scala-lang#scala-reflect;2.12.4
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(compile)]
@@ -2065,6 +2067,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
@@ -2453,6 +2456,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
@@ -3335,6 +3339,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
@@ -3719,6 +3724,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
@@ -4605,6 +4611,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
@@ -4991,6 +4998,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
@@ -5876,6 +5884,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
@@ -6258,6 +6267,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
@@ -7138,6 +7148,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->compile]
@@ -7566,6 +7577,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->compile]
@@ -8478,6 +8490,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
@@ -8866,6 +8879,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
@@ -9750,6 +9764,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile-internal->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile-internal->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile-internal->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile-internal->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile-internal->compile]
@@ -10134,6 +10149,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile-internal->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile-internal->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile-internal->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile-internal->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile-internal->compile]
@@ -11020,6 +11036,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
@@ -11408,6 +11425,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
@@ -12290,6 +12308,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
@@ -12674,6 +12693,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
@@ -13557,6 +13577,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime-internal->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime-internal->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime-internal->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime-internal->compile]
@@ -13941,6 +13962,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime-internal->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime-internal->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime-internal->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime-internal->compile]
@@ -14828,6 +14850,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
@@ -15222,6 +15245,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [compile->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [compile->compile]
@@ -16110,6 +16134,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
@@ -16500,6 +16525,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [runtime->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [runtime->compile]
@@ -17388,6 +17414,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test->compile]
@@ -17804,6 +17831,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test->compile]
@@ -18705,6 +18733,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test-internal->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9 [test-internal->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test-internal->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test-internal->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [test-internal->compile]
@@ -19121,6 +19150,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test-internal->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.asynchttpclient#async-http-client;2.0.38 [test-internal->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test-internal->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test-internal->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test-internal->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [test-internal->compile]
@@ -19696,6 +19726,7 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->runtime]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->compile]
@@ -19706,27 +19737,27 @@
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->optional(default)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-library;2.12.4 [scala-tool->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
-[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->master(compile)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->runtime]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->master]
+[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->master(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->compile]
-[debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->master(compile)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->runtime]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-reflect;2.12.4 [scala-tool->master]
-[debug] == resolving dependencies default#choucas$sources;0.1->jline#jline;2.14.5 [scala-tool->compile]
-[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.14.5 {scala-tool=[compile, master(compile), compile(*), master]}
+[debug] == resolving dependencies default#choucas$sources;0.1->jline#jline;2.14.5 [scala-tool->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.14.5 {scala-tool=[master(*), compile, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: jline#jline;2.14.5
 [debug] 	found jline#jline;2.14.5 in sbt-chain
-[debug] == resolving dependencies default#choucas$sources;0.1->jline#jline;2.14.5 [scala-tool->master(compile)]
+[debug] == resolving dependencies default#choucas$sources;0.1->jline#jline;2.14.5 [scala-tool->compile]
 [debug] == resolving dependencies default#choucas$sources;0.1->jline#jline;2.14.5 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#choucas$sources;0.1->jline#jline;2.14.5 [scala-tool->master]
 [debug] == resolving dependencies default#choucas$sources;0.1->org.scala-lang#scala-compiler;2.12.4 [scala-tool->default]
@@ -19745,211 +19776,222 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.apache.lucene#lucene-spatial;6.6.0!lucene-spatial.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.12;2.8.9!jackson-module-scala_2.12.jar(src)
-[debug] no default ivy user dir defined: set to /home/eisti/.ivy2
-[debug] no default ivy user dir defined: set to /home/eisti/.ivy2
-[debug] 	[NOT REQUIRED] io.netty#netty-handler;4.1.11.Final!netty-handler.jar(src)
-[debug] no default ivy user dir defined: set to /home/eisti/.ivy2
-[debug] no default ivy user dir defined: set to /home/eisti/.ivy2
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to /home/eisti/.ivy2/cache
-[debug] no default cache defined: set to /home/eisti/.ivy2/cache
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/eisti/.ivy2/cache
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default cache defined: set to /home/eisti/.ivy2/cache
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (67ms)
-[debug] 	default cache: /home/eisti/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http_2.12;10.0.11!akka-http_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.12;2.8.9!jackson-module-scala_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-parsing_2.12;10.0.11!akka-parsing_2.12.jar(src)
-[debug] settings loaded (86ms)
-[debug] 	default cache: /home/eisti/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
+[debug] 		tried /home/eisti/.ivy2/local/net.databinder.dispatch/dispatch-core_2.12/0.13.3/srcs/dispatch-core_2.12-sources.jar
 [debug] 	[NOT REQUIRED] org.elasticsearch.plugin#parent-join-client;5.5.2!parent-join-client.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-backward-codecs;6.6.0!lucene-backward-codecs.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.12/0.13.3/dispatch-core_2.12-0.13.3-sources.jar
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.8.9!jackson-annotations.jar(src)
-[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] io.circe#circe-jawn_2.12;0.7.1!circe-jawn_2.12.jar(src)
-[debug] settings loaded (97ms)
-[debug] 	default cache: /home/eisti/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (95ms)
-[debug] 	default cache: /home/eisti/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	[NOT REQUIRED] org.asynchttpclient#async-http-client;2.0.38!async-http-client.jar(src)
-[debug] 	[NOT REQUIRED] net.databinder.dispatch#dispatch-core_2.12;0.13.3!dispatch-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] org.spire-math#jawn-parser_2.12;0.10.4!jawn-parser_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch#securesm;1.1!securesm.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-streams_2.12;5.5.3!elastic4s-streams_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-grouping;6.6.0!lucene-grouping.jar(src)
-[debug] 	[NOT REQUIRED] org.asynchttpclient#async-http-client-netty-utils;2.0.38!async-http-client-netty-utils.jar(src)
-[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-stream_2.12;2.5.7!akka-stream_2.12.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty-resolver;4.1.11.Final!netty-resolver.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty-transport;4.1.11.Final!netty-transport.jar(src)
-[debug] 	[NOT REQUIRED] org.asynchttpclient#netty-resolver;2.0.38!netty-resolver.jar(src)
-[debug] 	[NOT REQUIRED] io.swagger#swagger-annotations;1.5.16!swagger-annotations.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-tcp_2.12;5.5.3!elastic4s-tcp_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.tdunning#t-digest;3.1!t-digest.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.netty#netty-reactive-streams;1.0.8!netty-reactive-streams.jar(src)
-[debug] 	[NOT REQUIRED] com.vividsolutions#jts;1.13!jts.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#cats-laws_2.12;0.9.0!cats-laws_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#macro-compat_2.12;1.1.1!macro-compat_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.reflections#reflections;0.9.11!reflections.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch.plugin#transport-netty3-client;5.5.2!transport-netty3-client.jar(src)
-[debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.8.9!jackson-core.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpasyncclient;4.1.2!httpasyncclient.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#cats-kernel_2.12;0.9.0!cats-kernel_2.12.jar(src)
-[debug] 	[NOT REQUIRED] io.swagger#swagger-jaxrs;1.5.16!swagger-jaxrs.jar(src)
-[debug] 	[NOT REQUIRED] org.scalacheck#scalacheck_2.12;1.13.4!scalacheck_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-misc;6.6.0!lucene-misc.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#cats-core_2.12;0.9.0!cats-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-cbor;2.8.6!jackson-dataformat-cbor.jar(src)
-[debug] 	[NOT REQUIRED] javax.ws.rs#jsr311-api;1.1.1!jsr311-api.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.12;2.5.7!akka-actor_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe#config;1.3.2!config.jar(src)
-[debug] 	[NOT REQUIRED] io.circe#circe-core_2.12;0.7.1!circe-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-jackson_2.12;5.5.3!elastic4s-jackson_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#cats-macros_2.12;0.9.0!cats-macros_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-highlighter;6.6.0!lucene-highlighter.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty-transport-native-epoll;4.0.54.Final!netty-transport-native-epoll.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.play#play-functional_2.12;2.6.0-M6!play-functional_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-spatial-extras;6.6.0!lucene-spatial-extras.jar(src)
-[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar(src)
-[debug] 	[NOT REQUIRED] com.google.guava#guava;20.0!guava.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-sandbox;6.6.0!lucene-sandbox.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-join;6.6.0!lucene-join.jar(src)
-[debug] 	[NOT REQUIRED] io.circe#circe-parser_2.12;0.7.1!circe-parser_2.12.jar(src)
-[debug] 	[NOT REQUIRED] io.swagger#swagger-core;1.5.16!swagger-core.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-play-json_2.12;5.5.3!elastic4s-play-json_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.github.swagger-akka-http#swagger-akka-http_2.12;0.11.0!swagger-akka-http_2.12.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.asynchttpclient/async-http-client/2.0.38/srcs/async-http-client-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client/2.0.38/async-http-client-2.0.38-sources.jar
+[debug] 	[NOT REQUIRED] org.typelevel#machinist_2.12;0.6.1!machinist_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore-nio;4.4.5!httpcore-nio.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch#jna;4.4.0!jna.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch.client#rest;5.5.2!rest.jar(src)
-[debug] 	[NOT REQUIRED] com.github.mpilquist#simulacrum_2.12;0.10.0!simulacrum_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-queryparser;6.6.0!lucene-queryparser.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#cats_2.12;0.9.0!cats_2.12.jar(src)
+[debug] no default ivy user dir defined: set to /home/eisti/.ivy2
 [debug] 	[NOT REQUIRED] org.elasticsearch.plugin#reindex-client;5.5.2!reindex-client.jar(src)
 [debug] 	[NOT REQUIRED] com.carrotsearch#hppc;0.7.1!hppc.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-core;6.6.0!lucene-core.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-core_2.12;5.5.3!elastic4s-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-1.2-api;2.6.2!log4j-1.2-api.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#cats-free_2.12;0.9.0!cats-free_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalaj#scalaj-http_2.12;2.3.0!scalaj-http_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.json4s#json4s-native_2.12;3.5.1!json4s-native_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.json4s#json4s-jackson_2.12;3.5.1!json4s-jackson_2.12.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty-all;4.1.10.Final!netty-all.jar(src)
+[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.asynchttpclient#netty-codec-dns;2.0.38!netty-codec-dns.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.exts#exts_2.12;1.44.0!exts_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.swagger#swagger-scala-module_2.12;1.0.4!swagger-scala-module_2.12.jar(src)
+[debug] no default cache defined: set to /home/eisti/.ivy2/cache
+[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] 	[NOT REQUIRED] io.swagger#swagger-models;1.5.16!swagger-models.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch.plugin#percolator-client;5.5.2!percolator-client.jar(src)
-[debug] 	[NOT REQUIRED] org.json4s#json4s-ast_2.12;3.5.1!json4s-ast_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-api;2.8.2!log4j-api.jar(src)
 [debug] 	[NOT REQUIRED] org.json4s#json4s-scalap_2.12;3.5.1!json4s-scalap_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch.plugin#transport-netty4-client;5.5.2!transport-netty4-client.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9!jackson-dataformat-yaml.jar(src)
 [debug] 	[NOT REQUIRED] org.locationtech.spatial4j#spatial4j;0.6!spatial4j.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#machinist_2.12;0.6.1!machinist_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.1!reactive-streams.jar(src)
+[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] 	[NOT REQUIRED] javax.validation#validation-api;1.1.0.Final!validation-api.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.5!httpcore.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-json_2.12;2.6.0-M6!play-json_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.github.spullara.mustache.java#compiler;0.9.3!compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.elasticsearch.plugin#lang-mustache-client;5.5.2!lang-mustache-client.jar(src)
-[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-json4s_2.12;5.5.3!elastic4s-json4s_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-paranamer;2.8.9!jackson-module-paranamer.jar(src)
+[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] 	[NOT REQUIRED] org.apache.lucene#lucene-suggest;6.6.0!lucene-suggest.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.2.2!ssl-config-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)
-[debug] 	[NOT REQUIRED] io.circe#circe-generic_2.12;0.7.1!circe-generic_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#catalysts-macros_2.12;0.0.5!catalysts-macros_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-http_2.12;5.5.3!elastic4s-http_2.12.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty;3.10.6.Final!netty.jar(src)
+[debug] including url: jar:file:/home/eisti/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.0.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.8.5!jackson-datatype-jsr310.jar(src)
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.lucene#lucene-memory;6.6.0!lucene-memory.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.3!httpclient.jar(src)
+[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.12;2.3.2!shapeless_2.12.jar(src)
+[debug] settings loaded (9ms)
+[debug] 	default cache: /home/eisti/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-queries;6.6.0!lucene-queries.jar(src)
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.1!reactive-streams.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch#securesm;1.1!securesm.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.5!httpcore.jar(src)
+[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-streams_2.12;5.5.3!elastic4s-streams_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.github.spullara.mustache.java#compiler;0.9.3!compiler.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.asynchttpclient/async-http-client-netty-utils/2.0.38/srcs/async-http-client-netty-utils-sources.jar
+[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-json4s_2.12;5.5.3!elastic4s-json4s_2.12.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client-netty-utils/2.0.38/async-http-client-netty-utils-2.0.38-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar(src)
 [debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-circe_2.12;5.5.3!elastic4s-circe_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.lucene#lucene-spatial3d;6.6.0!lucene-spatial3d.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.lucene#lucene-analyzers-common;6.6.0!lucene-analyzers-common.jar(src)
 [debug] 	[NOT REQUIRED] org.yaml#snakeyaml;1.17!snakeyaml.jar(src)
-[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.12;2.3.2!shapeless_2.12.jar(src)
-[debug] 	[NOT REQUIRED] net.databinder.dispatch#dispatch-json4s-native_2.12;0.13.3!dispatch-json4s-native_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-queries;6.6.0!lucene-queries.jar(src)
-[debug] 	[NOT REQUIRED] org.typelevel#catalysts-platform_2.12;0.0.5!catalysts-platform_2.12.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/net.databinder.dispatch/dispatch-json4s-native_2.12/0.13.3/srcs/dispatch-json4s-native_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.12/0.13.3/dispatch-json4s-native_2.12-0.13.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.12/0.13.3/dispatch-core_2.12-0.13.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.12/0.13.3/dispatch-core_2.12-0.13.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client/2.0.38/async-http-client-2.0.38-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client/2.0.38/async-http-client-2.0.38-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client-netty-utils/2.0.38/async-http-client-netty-utils-2.0.38-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client-netty-utils/2.0.38/async-http-client-netty-utils-2.0.38-sources.jar
+[info] downloading https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.12/0.13.3/dispatch-json4s-native_2.12-0.13.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.12/0.13.3/dispatch-json4s-native_2.12-0.13.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.12/0.13.3/dispatch-core_2.12-0.13.3-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client-netty-utils/2.0.38/async-http-client-netty-utils-2.0.38-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.12/0.13.3/dispatch-json4s-native_2.12-0.13.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.12/0.13.3/dispatch-core_2.12-0.13.3-sources.jar
+[info] 	[SUCCESSFUL ] net.databinder.dispatch#dispatch-core_2.12;0.13.3!dispatch-core_2.12.jar(src) (115ms)
+[debug] 	[NOT REQUIRED] org.spire-math#jawn-parser_2.12;0.10.4!jawn-parser_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-grouping;6.6.0!lucene-grouping.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/com.typesafe.netty/netty-reactive-streams/1.0.8/srcs/netty-reactive-streams-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client/2.0.38/async-http-client-2.0.38-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client-netty-utils/2.0.38/async-http-client-netty-utils-2.0.38-sources.jar
+[info] 	[SUCCESSFUL ] org.asynchttpclient#async-http-client-netty-utils;2.0.38!async-http-client-netty-utils.jar(src) (117ms)
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty-resolver;4.1.11.Final!netty-resolver.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-core_2.12;0.9.0!cats-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-cbor;2.8.6!jackson-dataformat-cbor.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.12;2.5.7!akka-actor_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-jackson_2.12;5.5.3!elastic4s-jackson_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-highlighter;6.6.0!lucene-highlighter.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-functional_2.12;2.6.0-M6!play-functional_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.circe#circe-parser_2.12;0.7.1!circe-parser_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch#jna;4.4.0!jna.jar(src)
+[debug] 	[NOT REQUIRED] com.github.mpilquist#simulacrum_2.12;0.10.0!simulacrum_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-queryparser;6.6.0!lucene-queryparser.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats_2.12;0.9.0!cats_2.12.jar(src)
+[debug] sha1 OK for https://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.12/0.13.3/dispatch-json4s-native_2.12-0.13.3-sources.jar
+[info] 	[SUCCESSFUL ] net.databinder.dispatch#dispatch-json4s-native_2.12;0.13.3!dispatch-json4s-native_2.12.jar(src) (122ms)
 [debug] 	[NOT REQUIRED] io.netty#netty-buffer;4.1.11.Final!netty-buffer.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty-codec;4.1.11.Final!netty-codec.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.asynchttpclient/netty-resolver-dns/2.0.38/srcs/netty-resolver-dns-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver-dns/2.0.38/netty-resolver-dns-2.0.38-sources.jar
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-core;6.6.0!lucene-core.jar(src)
+[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-core_2.12;5.5.3!elastic4s-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-1.2-api;2.6.2!log4j-1.2-api.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-free_2.12;0.9.0!cats-free_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-paranamer;2.8.9!jackson-module-paranamer.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.2.2!ssl-config-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)
+[debug] 	[NOT REQUIRED] io.circe#circe-generic_2.12;0.7.1!circe-generic_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#catalysts-macros_2.12;0.0.5!catalysts-macros_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty;3.10.6.Final!netty.jar(src)
+[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.3!httpclient.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-core_2.12;10.0.11!akka-http-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.6.2!log4j-core.jar(src)
 [debug] 	[NOT REQUIRED] io.circe#circe-numbers_2.12;0.7.1!circe-numbers_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-joda;2.8.8!jackson-datatype-joda.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)
 [debug] 	[NOT REQUIRED] net.sf.jopt-simple#jopt-simple;5.0.2!jopt-simple.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.8.5!jackson-datatype-jdk8.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-smile;2.8.6!jackson-dataformat-smile.jar(src)
 [debug] 	[NOT REQUIRED] org.typelevel#cats-jvm_2.12;0.9.0!cats-jvm_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.javassist#javassist;3.21.0-GA!javassist.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.8.9!jackson-databind.jar(src)
 [debug] 	[NOT REQUIRED] org.typelevel#discipline_2.12;0.7.2!discipline_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.hdrhistogram#HdrHistogram;2.1.9!HdrHistogram.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch#elasticsearch;5.5.2!elasticsearch.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty-codec-http;4.1.11.Final!netty-codec-http.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty-codec;4.1.11.Final!netty-codec.jar(src)
-[debug] 	[NOT REQUIRED] org.joda#joda-convert;1.6!joda-convert.jar(src)
-[debug] 	[NOT REQUIRED] org.asynchttpclient#netty-resolver-dns;2.0.38!netty-resolver-dns.jar(src)
+[info] downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver-dns/2.0.38/netty-resolver-dns-2.0.38-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver-dns/2.0.38/netty-resolver-dns-2.0.38-sources.jar
+[debug] 	[NOT REQUIRED] org.elasticsearch.client#transport;5.5.2!transport.jar(src)
+[debug] 	[NOT REQUIRED] com.tdunning#t-digest;3.1!t-digest.jar(src)
+[debug] 	[NOT REQUIRED] com.vividsolutions#jts;1.13!jts.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#macro-compat_2.12;1.1.1!macro-compat_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch.plugin#transport-netty3-client;5.5.2!transport-netty3-client.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.8.9!jackson-core.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpasyncclient;4.1.2!httpasyncclient.jar(src)
+[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar(src)
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/asynchttpclient/async-http-client/2.0.38/async-http-client-2.0.38-sources.jar
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-sandbox;6.6.0!lucene-sandbox.jar(src)
+[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-play-json_2.12;5.5.3!elastic4s-play-json_2.12.jar(src)
+[info] 	[SUCCESSFUL ] org.asynchttpclient#async-http-client;2.0.38!async-http-client.jar(src) (172ms)
+[debug] 	[NOT REQUIRED] com.github.swagger-akka-http#swagger-akka-http_2.12;0.11.0!swagger-akka-http_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.asynchttpclient/netty-resolver/2.0.38/srcs/netty-resolver-sources.jar
+[debug] 	[NOT REQUIRED] io.netty#netty-handler;4.1.11.Final!netty-handler.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-backward-codecs;6.6.0!lucene-backward-codecs.jar(src)
+[debug] 	[NOT REQUIRED] io.circe#circe-jawn_2.12;0.7.1!circe-jawn_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-stream_2.12;2.5.7!akka-stream_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty-transport;4.1.11.Final!netty-transport.jar(src)
+[debug] 	[NOT REQUIRED] io.swagger#swagger-annotations;1.5.16!swagger-annotations.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver/2.0.38/netty-resolver-2.0.38-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8-sources.jar.sha1
+[debug] 	[NOT REQUIRED] org.typelevel#cats-kernel_2.12;0.9.0!cats-kernel_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.swagger#swagger-jaxrs;1.5.16!swagger-jaxrs.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-misc;6.6.0!lucene-misc.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe#config;1.3.2!config.jar(src)
+[debug] 	[NOT REQUIRED] io.circe#circe-core_2.12;0.7.1!circe-core_2.12.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.json4s/json4s-native_2.12/3.5.1/srcs/json4s-native_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.5.1/json4s-native_2.12-3.5.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver/2.0.38/netty-resolver-2.0.38-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver/2.0.38/netty-resolver-2.0.38-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.5.1/json4s-native_2.12-3.5.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.5.1/json4s-native_2.12-3.5.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver-dns/2.0.38/netty-resolver-dns-2.0.38-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8-sources.jar
+[info] 	[SUCCESSFUL ] com.typesafe.netty#netty-reactive-streams;1.0.8!netty-reactive-streams.jar(src) (112ms)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-laws_2.12;0.9.0!cats-laws_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.reflections#reflections;0.9.11!reflections.jar(src)
+[debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src)
+[debug] 	[NOT REQUIRED] org.scalacheck#scalacheck_2.12;1.13.4!scalacheck_2.12.jar(src)
+[debug] 	[NOT REQUIRED] javax.ws.rs#jsr311-api;1.1.1!jsr311-api.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-macros_2.12;0.9.0!cats-macros_2.12.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/io.netty/netty-transport-native-epoll/4.0.54.Final/srcs/netty-transport-native-epoll-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.0.54.Final/netty-transport-native-epoll-4.0.54.Final-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver/2.0.38/netty-resolver-2.0.38-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.0.54.Final/netty-transport-native-epoll-4.0.54.Final-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.0.54.Final/netty-transport-native-epoll-4.0.54.Final-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.5.1/json4s-native_2.12-3.5.1-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver-dns/2.0.38/netty-resolver-dns-2.0.38-sources.jar
+[info] 	[SUCCESSFUL ] org.asynchttpclient#netty-resolver-dns;2.0.38!netty-resolver-dns.jar(src) (125ms)
 [debug] 	[NOT REQUIRED] org.json4s#json4s-core_2.12;3.5.1!json4s-core_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.typelevel#cats-kernel-laws_2.12;0.9.0!cats-kernel-laws_2.12.jar(src)
 [debug] 	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-common;4.1.11.Final!netty-common.jar(src)
-[debug] 	[NOT REQUIRED] org.json4s#json4s-ext_2.12;3.2.11!json4s-ext_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.elasticsearch.client#transport;5.5.2!transport.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.json4s/json4s-ext_2.12/3.2.11/srcs/json4s-ext_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/json4s/json4s-ext_2.12/3.2.11/json4s-ext_2.12-3.2.11-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-ext_2.12/3.2.11/json4s-ext_2.12-3.2.11-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-ext_2.12/3.2.11/json4s-ext_2.12-3.2.11-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver/2.0.38/netty-resolver-2.0.38-sources.jar
+[info] 	[SUCCESSFUL ] org.asynchttpclient#netty-resolver;2.0.38!netty-resolver.jar(src) (115ms)
+[debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-tcp_2.12;5.5.3!elastic4s-tcp_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#catalysts-platform_2.12;0.0.5!catalysts-platform_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.6.2!log4j-core.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-joda;2.8.8!jackson-datatype-joda.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-smile;2.8.6!jackson-dataformat-smile.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.8.9!jackson-databind.jar(src)
+[debug] 	[NOT REQUIRED] org.hdrhistogram#HdrHistogram;2.1.9!HdrHistogram.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch#elasticsearch;5.5.2!elasticsearch.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty-codec-http;4.1.11.Final!netty-codec-http.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.joda/joda-convert/1.6/srcs/joda-convert-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.0.54.Final/netty-transport-native-epoll-4.0.54.Final-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.5.1/json4s-native_2.12-3.5.1-sources.jar
+[info] 	[SUCCESSFUL ] org.json4s#json4s-native_2.12;3.5.1!json4s-native_2.12.jar(src) (116ms)
+[debug] 	[NOT REQUIRED] io.netty#netty-all;4.1.10.Final!netty-all.jar(src)
+[debug] 		tried /home/eisti/.ivy2/local/org.asynchttpclient/netty-codec-dns/2.0.38/srcs/netty-codec-dns-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/asynchttpclient/netty-codec-dns/2.0.38/netty-codec-dns-2.0.38-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-ext_2.12/3.2.11/json4s-ext_2.12-3.2.11-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.0.54.Final/netty-transport-native-epoll-4.0.54.Final-sources.jar
+[info] 	[SUCCESSFUL ] io.netty#netty-transport-native-epoll;4.0.54.Final!netty-transport-native-epoll.jar(src) (118ms)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-spatial-extras;6.6.0!lucene-spatial-extras.jar(src)
+[debug] 	[NOT REQUIRED] com.google.guava#guava;20.0!guava.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.lucene#lucene-join;6.6.0!lucene-join.jar(src)
+[debug] 	[NOT REQUIRED] io.swagger#swagger-core;1.5.16!swagger-core.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch.client#rest;5.5.2!rest.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scalaj#scalaj-http_2.12;2.3.0!scalaj-http_2.12.jar(src)
+[info] downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-codec-dns/2.0.38/netty-codec-dns-2.0.38-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-codec-dns/2.0.38/netty-codec-dns-2.0.38-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/json4s/json4s-ext_2.12/3.2.11/json4s-ext_2.12-3.2.11-sources.jar
+[info] 	[SUCCESSFUL ] org.json4s#json4s-ext_2.12;3.2.11!json4s-ext_2.12.jar(src) (111ms)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-java8-compat_2.12;0.8.0!scala-java8-compat_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.2.1!commons-lang3.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-cbor;2.8.8!jackson-dataformat-cbor.jar(src)
@@ -19958,18 +20000,31 @@
 [debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-embedded_2.12;5.5.3!elastic4s-embedded_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.sksamuel.elastic4s#elastic4s-testkit_2.12;5.5.3!elastic4s-testkit_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(src)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/asynchttpclient/netty-codec-dns/2.0.38/netty-codec-dns-2.0.38-sources.jar.sha1
 [debug] 	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar(src)
-[debug] :: resolution report :: resolve 10590ms :: artifacts dl 264ms
-[debug] 	report for default#choucas$sources;0.1 compile produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-compile.xml
-[debug] 	report for default#choucas$sources;0.1 runtime produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-runtime.xml
-[debug] 	report for default#choucas$sources;0.1 test produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-test.xml
-[debug] 	report for default#choucas$sources;0.1 provided produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-provided.xml
-[debug] 	report for default#choucas$sources;0.1 optional produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-optional.xml
-[debug] 	report for default#choucas$sources;0.1 compile-internal produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-compile-internal.xml
-[debug] 	report for default#choucas$sources;0.1 runtime-internal produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-runtime-internal.xml
-[debug] 	report for default#choucas$sources;0.1 test-internal produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-test-internal.xml
-[debug] 	report for default#choucas$sources;0.1 plugin produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-plugin.xml
-[debug] 	report for default#choucas$sources;0.1 pom produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-pom.xml
-[debug] 	report for default#choucas$sources;0.1 scala-tool produced in /home/eisti/Info/ICC/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-scala-tool.xml
-[debug] 	resolve done (10590ms resolve - 264ms download)
+[info] downloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/asynchttpclient/netty-codec-dns/2.0.38/netty-codec-dns-2.0.38-sources.jar
+[info] 	[SUCCESSFUL ] org.asynchttpclient#netty-codec-dns;2.0.38!netty-codec-dns.jar(src) (134ms)
+[debug] 	[NOT REQUIRED] com.sksamuel.exts#exts_2.12;1.44.0!exts_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch.plugin#percolator-client;5.5.2!percolator-client.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-ast_2.12;3.5.1!json4s-ast_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.elasticsearch.plugin#transport-netty4-client;5.5.2!transport-netty4-client.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.8.9!jackson-dataformat-yaml.jar(src)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar
+[info] 	[SUCCESSFUL ] org.joda#joda-convert;1.6!joda-convert.jar(src) (212ms)
+[debug] :: resolution report :: resolve 5082ms :: artifacts dl 541ms
+[debug] 	report for default#choucas$sources;0.1 compile produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-compile.xml
+[debug] 	report for default#choucas$sources;0.1 runtime produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-runtime.xml
+[debug] 	report for default#choucas$sources;0.1 test produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-test.xml
+[debug] 	report for default#choucas$sources;0.1 provided produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-provided.xml
+[debug] 	report for default#choucas$sources;0.1 optional produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-optional.xml
+[debug] 	report for default#choucas$sources;0.1 compile-internal produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-compile-internal.xml
+[debug] 	report for default#choucas$sources;0.1 runtime-internal produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-runtime-internal.xml
+[debug] 	report for default#choucas$sources;0.1 test-internal produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-test-internal.xml
+[debug] 	report for default#choucas$sources;0.1 plugin produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-plugin.xml
+[debug] 	report for default#choucas$sources;0.1 pom produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-pom.xml
+[debug] 	report for default#choucas$sources;0.1 scala-tool produced in /home/eisti/Documents/VraiProjet/Choucas/target/scala-2.12/resolution-cache/reports/default-choucas$sources-scala-tool.xml
+[debug] 	resolve done (5082ms resolve - 541ms download)

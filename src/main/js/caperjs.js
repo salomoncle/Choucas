@@ -92,55 +92,52 @@ casper.then(function() {
 
 casper.then(function() {
     var INPUT_NUMBER = casper.cli.get("number");
-    this.repeat(Randos.length, function() {
-        i++;
-        currentRando = i
-        //this.echo(Randos[i]['url'])// change the link being opened (has to be here specifically)
-        this.thenOpen((Randos[i]['url']), function() {
+    currentRando = INPUT_NUMBER
+    //this.echo(Randos[i]['url'])// change the link being opened (has to be here specifically)
+    this.thenOpen((Randos[currentRando]['url']), function() {
 
-            var rez = this.evaluate(getDetails)
+        var rez = this.evaluate(getDetails)
 
-            //this.echo(JSON.stringify(rez))
+        //this.echo(JSON.stringify(rez))
 
-            //Afficher les infos de chaque rando
+        //Afficher les infos de chaque rando
 
-            if(rez != null) {
-                rez['titre'] = Randos[currentRando]['titre']
-                rez['description'] = Randos[currentRando]['description']
-                rez['url'] = Randos[currentRando]['url']
-                Data.push(rez)
-            }
+        if(rez != null) {
+            rez['titre'] = Randos[currentRando]['titre']
+            rez['description'] = Randos[currentRando]['description']
+            rez['url'] = Randos[currentRando]['url']
+            this.echo(JSON.stringify(rez))
+        }
 
-            /*
-            this.echo("Randonnée : "+rez['titre'])
-            this.echo("Url : "+rez['url'])
-            this.echo("Description : "+rez['description'])
+        /*
+        this.echo("Randonnée : "+rez['titre'])
+        this.echo("Url : "+rez['url'])
+        this.echo("Description : "+rez['description'])
 
 
-            this.echo("durée : "+rez['duree'])
-            this.echo("distance parcourue : "+rez['distance'])
-            this.echo("dénivelé positif : "+rez['deniveleP'])
-            this.echo("dénivelé négatif : "+rez['deniveleM'])
-            this.echo("Point haut : "+rez['pointHaut'])
-            this.echo("Point bas : "+rez['pointBas'])
-            this.echo("Difficulté : "+rez['difficulte'])
-            for (var i = 0; i < rez['regions'].length; i++) {
-                this.echo("Région "+i+" : "+rez['regions'][i])
-            }
-            this.echo("Commune : "+rez['commune'])
-            this.echo("Position du départ : "+rez['depart'])
-            this.echo("Retour en bas ? "+rez['retourPointBas'])
-            this.echo('')
-            this.echo('')
-            this.echo('')
-            */
-
-        });
-        if(i == INPUT_NUMBER)
-            this.echo(JSON.stringify(Data))
+        this.echo("durée : "+rez['duree'])
+        this.echo("distance parcourue : "+rez['distance'])
+        this.echo("dénivelé positif : "+rez['deniveleP'])
+        this.echo("dénivelé négatif : "+rez['deniveleM'])
+        this.echo("Point haut : "+rez['pointHaut'])
+        this.echo("Point bas : "+rez['pointBas'])
+        this.echo("Difficulté : "+rez['difficulte'])
+        for (var i = 0; i < rez['regions'].length; i++) {
+            this.echo("Région "+i+" : "+rez['regions'][i])
+        }
+        this.echo("Commune : "+rez['commune'])
+        this.echo("Position du départ : "+rez['depart'])
+        this.echo("Retour en bas ? "+rez['retourPointBas'])
+        this.echo('')
+        this.echo('')
+        this.echo('')
+        */
 
     });
-    //this.echo(JSON.stringify(Data))
+    if(i == INPUT_NUMBER)
+        this.echo(JSON.stringify(Data))
+
+//this.echo(JSON.stringify(Data))
 
 });
 
