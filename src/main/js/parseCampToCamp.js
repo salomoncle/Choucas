@@ -19,7 +19,7 @@ casper.then(function () {
         rez['url'] = url ? url : ""
         rez['source'] = "https://www.camptocamp.org/"
 
-        rez['regions']=""
+        rez['regions']= "[]"
         if (json.areas[1])
             Object.keys(json.areas[1].locales).forEach(function (key) {
                 if (json.areas[1].locales[key].lang == "fr")
@@ -32,8 +32,6 @@ casper.then(function () {
                 if (json.areas[2].locales[key].lang == "fr")
                     rez['commune']=json.areas[2].locales[key].title
             })
-
-
 
         rez['deniveleP'] = json.height_diff_up ? json.height_diff_up : ""
         rez['deniveleN'] = json.height_diff_down ? json.height_diff_down : ""
