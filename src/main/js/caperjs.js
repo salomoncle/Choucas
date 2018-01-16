@@ -42,7 +42,7 @@ function getDetails(){
     rez['duree'] = duree;
     rez['distance'] = distance;
     rez['deniveleP'] = deniveleP;
-    rez['deniveleM'] = deniveleM;
+    rez['deniveleN'] = deniveleM;
     rez['pointHaut'] = pointHaut;
     rez['pointBas'] = pointBas;
     rez['difficulte'] = difficulte;
@@ -103,6 +103,7 @@ casper.then(function() {
         rez['titre'] = Randos[currentRando]['titre']
         rez['description'] = Randos[currentRando]['description']
         rez['url'] = Randos[currentRando]['url']
+        rez['source'] = "https://www.visorando.com"
         this.echo(JSON.stringify(rez))
 
 

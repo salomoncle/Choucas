@@ -72,7 +72,7 @@ object HttpServer {
           val length = nbRandos.substring(0,3).toInt
           var list = List.range(0, length)
 //          actorViso ! PushInES("viso/test1", actorES, 4)
-          list.map(i=> actorViso ! PushInES("viso/test1", actorES, i))
+          list.map(i=> actorViso ! PushInES("choucas/randos", actorES, i))
           complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "YOYO"))
         }
       } ~ path("elastic"){
