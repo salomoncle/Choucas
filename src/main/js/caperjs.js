@@ -39,17 +39,18 @@ function getDetails(){
     var depart = ((detail.split("<strong>Départ : </strong>")[1].split("<br")[0]).split('</a><br/>')[0]).split('rel="nofollow">')[1].split('</a>')[0]
     var retourPointBas = (detail.split("<strong>Retour point de départ : </strong>")[1].split("<br")[0]).split('<br')[0]
 
-    rez['duree'] = duree;
-    rez['distance'] = distance;
-    rez['deniveleP'] = deniveleP;
-    rez['deniveleN'] = deniveleM;
-    rez['pointHaut'] = pointHaut;
-    rez['pointBas'] = pointBas;
-    rez['difficulte'] = difficulte;
-    rez['regions'] = regions;
-    rez['commune'] = commune;
-    rez['depart'] = depart;
-    rez['retourPointBas'] = retourPointBas;
+
+    rez['duree'] = duree ? duree : "";
+    rez['distance'] = distance ? distance : "";
+    rez['deniveleP'] = deniveleP ? deniveleP : "";
+    rez['deniveleN'] = deniveleM ? deniveleM : "";
+    rez['pointHaut'] = pointHaut ? pointHaut : "";
+    rez['pointBas'] = pointBas ? pointBas: "";
+    rez['difficulte'] = difficulte ? difficulte : "";
+    rez['regions'] = regions ? regions : [];
+    rez['commune'] = commune ? commune: "";
+    rez['depart'] = depart ? depart : "";
+    rez['retourPointBas'] = retourPointBas ? retourPointBas : "";
 
     return  rez
 
@@ -100,9 +101,9 @@ casper.then(function() {
 
         //this.echo(JSON.stringify(rez))
 
-        rez['titre'] = Randos[currentRando]['titre']
-        rez['description'] = Randos[currentRando]['description']
-        rez['url'] = Randos[currentRando]['url']
+        rez['titre'] = Randos[currentRando]['titre'] ? Randos[currentRando]['titre'] : ""
+        rez['description'] = Randos[currentRando]['description'] ? Randos[currentRando]['description'] : ""
+        rez['url'] = Randos[currentRando]['url'] ? Randos[currentRando]['url'] : ""
         rez['source'] = "https://www.visorando.com"
         this.echo(JSON.stringify(rez))
 

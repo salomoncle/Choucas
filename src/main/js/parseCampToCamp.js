@@ -14,16 +14,17 @@ casper.then(function () {
     if(this.exists('body')) {
         var json = JSON.parse(casper.getPageContent())
         var rez={}
-        rez['titre'] = json.locales[0].title
+        rez['titre'] = json.locales[0].title ? json.locales[0].title :""
         rez['description'] = json.locales[0].description
-        rez['url'] = url
+        rez['url'] = url ? url : ""
         rez['source'] = "https://www.camptocamp.org/"
 
         rez['regions']=""
-        Object.keys(json.areas[1].locales).forEach(function (key) {
-            if (json.areas[1].locales[key].lang == "fr")
-                rez['regions']= [json.areas[1].locales[key].title]
-        })
+        if (json.areas[1])
+            Object.keys(json.areas[1].locales).forEach(function (key) {
+                if (json.areas[1].locales[key].lang == "fr")
+                    rez['regions']= [json.areas[1].locales[key].title]
+            })
 
         rez['commune']=""
         if (json.areas[2])
@@ -34,22 +35,18 @@ casper.then(function () {
 
 
 
-        rez['deniveleP'] = json.height_diff_up
-        rez['deniveleN'] = json.height_diff_down
-        rez['distance'] = json.length_total
-        rez['duree'] = json.locales[0].timing
-        rez['pointHaut'] = json.elevation_max
-        rez['pointBas'] = json.elevation_min
+        rez['deniveleP'] = json.height_diff_up ? json.height_diff_up : ""
+        rez['deniveleN'] = json.height_diff_down ? json.height_diff_down : ""
+        rez['distance'] = json.length_total ? json.length_total : ""
+        rez['duree'] = json.locales[0].timing ? json.locales[0].timing : ""
+        rez['pointHaut'] = json.elevation_max ? json.elevation_max : ""
+        rez['pointBas'] = json.elevation_min ? json.elevation_min : ""
         rez['retourPointBas'] = ""
-        rez['depart'] = json.geometry.geom.toString()
+        rez['depart'] = json.geometry.geom.toString() ? json.geometry.geom.toString() : ""
         rez['difficulte'] = ""
         if (json.hiking_rating) rez['difficulte'] = json.hiking_rating
 
         this.echo(JSON.stringify(rez))
-
-
-
-
 
 
     }

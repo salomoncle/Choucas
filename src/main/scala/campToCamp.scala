@@ -31,7 +31,7 @@ case class campToCamp() extends Actor {
 
   override def receive = {
     case PushC2C(path, actor) => println("Starting puhing data in es...")
-      dataC2C.map(id => Seq("casperjs", "--url=https://api.camptocamp.org/outings/" + id, "./src/main/js/parseCampToCamp.js") !!).foreach(json => actor ! Push(path, json)) //dataC2C.map(id => actor ! Push(Seq("casperjs", "--url=https://api.camptocamp.org/outings/" + id, "./src/main/js/parseCampToCamp.js"), path !!))
+      dataC2C.map(id => Seq("/home/eisti/Downloads/casperjs-1.1.4-1/bin/casperjs", "--url=https://api.camptocamp.org/outings/" + id, "./src/main/js/parseCampToCamp.js") !!).foreach(json => actor ! Push(path, json)) //dataC2C.map(id => actor ! Push(Seq("casperjs", "--url=https://api.camptocamp.org/outings/" + id, "./src/main/js/parseCampToCamp.js"), path !!))
 //    case Num(x) => dataC2C.map(id => (Seq("casperjs", "--url=https://api.camptocamp.org/outings/"+id, "./src/main/js/parseCampToCamp.js") !!))
     // println("bonjour " + getC2CJSON(dataC2C).map(url=> println(url)))//("locales").asInstanceOf[List[Map[String,Any]]])
       //println(Seq("casperjs", "--url=https://api.camptocamp.org/outings/959142", "./src/main/js/parseCampToCamp.js") !!)

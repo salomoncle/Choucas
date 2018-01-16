@@ -51,7 +51,7 @@ object HttpServer {
     //val campToCamp = JSON.parseFull(json.toString).get.asInstanceOf[Map[String, Any]]("documents")
     //println(campToCamp)
     //actorES ! Search()
-    actorDbp ! Text(URLEncoder.encode("Grand Tour du magnifique et mystérieux Lac Pavin et passant par le Puy de Montchal et le goufre du Creux de Soucy.").replace("+", "%20"))
+    //actorDbp ! Text(URLEncoder.encode("Grand Tour du magnifique et mystérieux Lac Pavin et passant par le Puy de Montchal et le goufre du Creux de Soucy.").replace("+", "%20"))
 
     val route =
       path("index") {
@@ -68,7 +68,7 @@ object HttpServer {
         }
       } ~ path("getDataViso") {
         get {
-          val nbRandos=(Seq("casperjs", "./src/main/js/getNbRandos.js") !!)
+          val nbRandos=(Seq("/home/eisti/Downloads/casperjs-1.1.4-1/bin/casperjs", "./src/main/js/getNbRandos.js") !!)
           val length = nbRandos.substring(0,3).toInt
           var list = List.range(0, length)
 //          actorViso ! PushInES("viso/test1", actorES, 4)
