@@ -29,17 +29,10 @@ object HttpServer {
     val actorES = system.actorOf(SmallestMailboxPool(5).props(Props(putDataES(actorDbp))), name="putDataEs")
 
     val route =
-      path("index") {
-        get {
-          parameter('name) {(name) =>complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"this is a get request : '$name'")) }
-        } ~
-          post{
-            parameter('name) {(name) =>complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"this is a post request : '$name'")) }
-          }
-      } ~ path("getDataC2C"){
+      path("getDataC2C"){
         get {
             actorC2C ! PushC2C("choucas/randos", actorES)
-            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"Collecting data on CamptToCamp"))
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"Collecting data on CamptToCamp.org"))
         }
       } ~ path("getDataViso") {
         get {
@@ -47,9 +40,9 @@ object HttpServer {
           val length = nbRandos.substring(0,3).toInt
           var list = List.range(0, length)
           list.map(i=> actorViso ! PushInES("choucas/randos", actorES, i))
-          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "YOYO"))
+          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "Collecting Data on visorando.com"))
         }
-      } ~ path("elastic"){
+      } ~ path("sandbox"){
         get{
             actorES ! SearchInField("choucas/randos","sommet","description")
             actorES ! Search("choucas/randos","1h")
@@ -92,7 +85,7 @@ object HttpServer {
         get {
           parameters('path, 'field){(path, field)=>
             implicit val timeout = Timeout(80 seconds)
-            val future = actorES ? GetSources(path, field)
+            val future = actorES ? GetSources
             val result = Await.result(future, timeout.duration).asInstanceOf[String]
             println(result)
 

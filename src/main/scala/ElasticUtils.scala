@@ -62,8 +62,7 @@ case class putDataES(dbp : ActorRef) extends Actor {
       get(id).from(path)
     }.await
       sender ! JsonUtil.toJson(resp.source)
-    case GetSources(path, field) => val resp = "[\"https://www.camptocamp.org\",\"https://www.visorando.com\"]"
-      sender ! (resp)
+    case GetSources => sender !  "[\"https://www.camptocamp.org\",\"https://www.visorando.com\"]"
     case _ => println("error")
   }
 
