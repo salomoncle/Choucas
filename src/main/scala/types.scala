@@ -9,7 +9,10 @@ object types {
   case class Push(path : String, json : String)
   case class PushInES(path : String, actor: ActorRef, i:Int)
   case class PushC2C(path : String, actor : ActorRef)
-  case class Search()
+  case class SearchInField(path : String, query: String,field : String )
+  case class Search(path : String, query: String)
+  case class GetWithId(path: String, id:String)
+  case class GetSources(path : String, field : String)
 
   case class JsonFormat(
                              commune: String,

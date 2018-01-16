@@ -5,7 +5,7 @@ import akka.http.scaladsl.model.{ContentTypes, HttpEntity}
 import akka.http.scaladsl.server.Directives.complete
 import com.sksamuel.elastic4s.ElasticsearchClientUri
 import com.sksamuel.elastic4s.http.HttpClient
-import main.types.{Push, Search, Text}
+import main.types._
 import com.sksamuel.elastic4s.http.ElasticDsl._
 
 case class putDataES() extends Actor {
@@ -20,10 +20,21 @@ case class putDataES() extends Actor {
       }.await
       println(response)
     }
-    case Search() => val resp = client.execute {
-      search("viso") query "Mont-dore"
+    case Search(path, qr) =>
+      val resp = client.execute {
+      search(path).query(qr)
     }.await
-      println(resp)
+      sender ! JsonUtil.toJson(resp)
+    case SearchInField(path, qr, field) => val resp = client.execute {
+      search(path).query(field+"="+qr)
+    }.await
+      sender ! JsonUtil.toJson(((resp)))
+    case GetWithId(path, id) => val resp = client.execute {
+      get(id).from(path)
+    }.await
+      sender ! JsonUtil.toJson(resp.source)
+    case GetSources(path, field) => val resp = "[\"https://www.camptocamp.org\",\"https://www.visorando.com\"]"
+      sender ! (resp)
     case _ => println("error")
   }
 

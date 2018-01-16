@@ -2,9 +2,11 @@ package main
 
 
 import java.net.URLEncoder
+import javax.ws.rs.PathParam
 
 import scala.io.StdIn
 import akka.actor.{ActorSystem, Props}
+import akka.event.Logging.Info
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.server.Directives._
@@ -20,20 +22,24 @@ import akka.pattern.ask
 import sys.process._
 import scalaj.http.{Http => JHttp}
 import scala.io.StdIn
+import io.swagger.annotations._
 import io.swagger.annotations
 import main.types._
 
 import scala.concurrent.Await
 import scala.util.parsing.json._
+import com.github.swagger.akka._
+
 
 object HttpServer {
-
   def main(args: Array[String]) {
 
     implicit val system = ActorSystem("my-system")
     implicit val materializer = ActorMaterializer()
     // needed for the future flatMap/onComplete in the end
     implicit val executionContext = system.dispatcher
+
+
     val list = List.range(0, 5)//9971)
     val numbers = Num(list)
     val actorC2C = system.actorOf(SmallestMailboxPool(5).props(Props(campToCamp())), name = "getDataC2C")
@@ -76,11 +82,77 @@ object HttpServer {
           complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "YOYO"))
         }
       } ~ path("elastic"){
-          get{
-//            actorC2C ! Push("choucas/test", "{\"title\":\"toto\"}", actorES)
+        get{
+            actorES ! SearchInField("choucas/randos","sommet","description")
+            actorES ! Search("choucas/randos","1h")
             complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, s"ELASTIC"))
           }
+        } ~ path("api" / "search"){
+        get {
+          parameters('path, 'query, 'field){(path, query, field)=>
+            implicit val timeout = Timeout(12 seconds)
+            val future = actorES ? SearchInField(path, query, field)
+            val result = Await.result(future, timeout.duration).asInstanceOf[String]
+            println(result)
+
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, result))
+          }
+
+
         }
+      }~ path("api" / "searchAll"){
+      get {
+        parameters('path, 'query){(path, query)=>
+          implicit val timeout = Timeout(12 seconds)
+          val future = actorES ? Search(path, query)
+          val result = Await.result(future, timeout.duration).asInstanceOf[String]
+          println(result)
+
+          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`,result.toString))
+        }
+
+
+      }
+    }~ path("api" / "searchAll"){
+        get {
+          parameters('path, 'query){(path, query)=>
+            implicit val timeout = Timeout(12 seconds)
+            val future = actorES ? Search(path, query)
+            val result = Await.result(future, timeout.duration).asInstanceOf[String]
+            println(result)
+
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`,result.toString))
+          }
+
+
+        }
+      }~ path("api" / "get"){
+        get {
+          parameters('path, 'id){(path, id)=>
+            implicit val timeout = Timeout(12 seconds)
+            val future = actorES ? GetWithId(path, id)
+            val result = Await.result(future, timeout.duration).asInstanceOf[String]
+            println(result)
+
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`,result.toString))
+          }
+
+
+        }
+      }~ path("api" / "getSources"){
+        get {
+          parameters('path, 'field){(path, field)=>
+            implicit val timeout = Timeout(80 seconds)
+            val future = actorES ? GetSources(path, field)
+            val result = Await.result(future, timeout.duration).asInstanceOf[String]
+            println(result)
+
+            complete(HttpEntity(ContentTypes.`text/html(UTF-8)`,result.toString))
+          }
+
+
+        }
+      }
     
     val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
 
