@@ -41,8 +41,9 @@ casper.then(function () {
         rez['pointHaut'] = json.elevation_max
         rez['pointBas'] = json.elevation_min
         rez['retourPointBas'] = ""
-        rez['depart'] = json.geometry.geom
-        rez['difficulte'] = json.hiking_rating
+        rez['depart'] = json.geometry.geom.toString()
+        rez['difficulte'] = ""
+        if (json.hiking_rating) rez['difficulte'] = json.hiking_rating
 
         this.echo(JSON.stringify(rez))
 
