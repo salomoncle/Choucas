@@ -21,12 +21,15 @@ object HttpServer {
     implicit val materializer = ActorMaterializer()
     implicit val executionContext = system.dispatcher
 
+    //parse settings file
+    val settings = settingsParser("./src/context.json").run()
+
     val list = List.range(0, 5)//9971)
     val numbers = Num(list)
-    val actorC2C = system.actorOf(SmallestMailboxPool(5).props(Props(campToCamp())), name = "getDataC2C")
-    val actorViso = system.actorOf(SmallestMailboxPool(5).props(Props(visoRando())), name = "getDataViso")
-    val actorDbp = system.actorOf(SmallestMailboxPool(5).props(Props(dbpedia())), name = "dbpedia")
-    val actorES = system.actorOf(SmallestMailboxPool(5).props(Props(putDataES(actorDbp))), name="putDataEs")
+    val actorC2C = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(campToCamp())), name = "getDataC2C")
+    val actorViso = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(visoRando())), name = "getDataViso")
+    val actorDbp = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(dbpedia())), name = "dbpedia")
+    val actorES = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(putDataES(actorDbp))), name="putDataEs")
 
     val route =
       path("getDataC2C"){
@@ -36,7 +39,7 @@ object HttpServer {
         }
       } ~ path("getDataViso") {
         get {
-          val nbRandos=(Seq("/home/eisti/Downloads/casperjs-1.1.4-1/bin/casperjs", "./src/main/js/getNbRandos.js") !!)
+          val nbRandos=(Seq("casperjs", "./src/main/js/getNbRandos.js") !!)
           val length = nbRandos.substring(0,3).toInt
           var list = List.range(0, length)
           list.map(i=> actorViso ! PushInES("choucas/randos", actorES, i))
@@ -94,9 +97,9 @@ object HttpServer {
         }
       }
     
-    val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
+    val bindingFuture = Http().bindAndHandle(route, settings.host, settings.port)
 
-    println(s"Server online at http://localhost:8080/\nPress RETURN to stop...")
+    println(s"Server online at http://" + settings.host + ":" + settings.port + "/\nPress RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
     bindingFuture
       .flatMap(_.unbind()) // trigger unbinding from the port

@@ -10,7 +10,7 @@ case class dbpedia() extends Actor {
 
   override def receive = {
     case Text(x) => {
-      val result = JHttp("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.7").header("accept", "application/json").asString
+      val result = JHttp("http://model.dbpedia-spotlight.org/en/annotate?text="+ (x) +"&confidence=0.2").header("accept", "application/json").asString
       val res = result.body
       sender ! res
     }
