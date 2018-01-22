@@ -1,6 +1,6 @@
 # Choucas Config
 
-Using context.json file.
+Using *context.json* file.
 Parameters : 
 * host **[String]** : host name for Choucas API 
 * port **[String]** : listening port for Choucas API
@@ -11,7 +11,7 @@ Parameters :
 * elastic_confidence **[Double]** : number used in dbpedia spotlight http requests for annotate text in data. Refering to [DBPedia-Lucene-Parameters](https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Lucene---Web-Service-Parameters#Confidence_ConfidenceFilter)
 
 
-Default context.json : 
+Default *context.json* : 
 <pre><code>
 {
      "host: "localhost",
@@ -25,12 +25,17 @@ Default context.json :
 </code></pre>
 
 
-# Running with Docker
+# Running Choucas
 
-Run the following command (using [docker-compose](https://docs.docker.com/compose/))
+### Run Elastic Search, LogsTash and Kibana services :
+Run the following commands (using [docker-compose](https://docs.docker.com/compose/))
 <pre><code>
+cd App/
 docker-compose up
 </code></pre>
+
+### Run Choucas API
+Use sbt shell with task *run*.
 
 
 
