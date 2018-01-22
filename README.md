@@ -1,14 +1,14 @@
-**Choucas Config**
-----
+# Choucas Config
+
 Using context.json file.
 Parameters : 
-* host : [String] host name for Choucas API 
-* port : [String] listening port for Choucas API
-* cluster_length_c2c : [Int] length of the actor pool running camp to camp collecting data
-* cluster_length_viso : [Int] length of the actor pool running viso rando scraping
-* cluster_length_bdb : [Int] length of the actor pool running dbpeadia annotations
-* cluter_length_elastic : [Int] length of the actor pool running elastic search requests
-* elastic_confidence : [Double] number used in dbpedia spotlight http requests for annotate text in data. Refering to [DBPedia-Lucene-Parameters](https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Lucene---Web-Service-Parameters#Confidence_ConfidenceFilter)
+* host **[String]** : host name for Choucas API 
+* port **[String]** : listening port for Choucas API
+* cluster_length_c2c **[Int]** : length of the actor pool running camp to camp collecting data
+* cluster_length_viso **[Int]** : length of the actor pool running viso rando scraping
+* cluster_length_bdb **[Int]** : length of the actor pool running dbpeadia annotations
+* cluter_length_elastic **[Int]** : length of the actor pool running elastic search requests
+* elastic_confidence **[Double]** : number used in dbpedia spotlight http requests for annotate text in data. Refering to [DBPedia-Lucene-Parameters](https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Lucene---Web-Service-Parameters#Confidence_ConfidenceFilter)
 
 
 Default context.json : 
@@ -25,8 +25,8 @@ Default context.json :
 </code></pre>
 
 
-**Running with Docker**
-----
+# Running with Docker
+
 Run the following command (using [docker-compose](https://docs.docker.com/compose/))
 <pre><code>
 docker-compose up
@@ -35,8 +35,19 @@ docker-compose up
 
 
 
-**Choucas API**
-----
+# Choucas Services
+
+### Elastic Search
+[Elastic Search](https://www.elastic.co/) service is deployed on port 9200. 
+Data Base can be requested refering to Elastic Search [API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html).
+
+### Kibana 
+
+[Kibana](https://www.elastic.co/products/kibana) service is deployed on port 5601.
+Kibana app is usefull to apply tool on [Elastic Search](https://www.elastic.co/) entries
+
+### Rest API
+
 
 * `GET`/api/getDataC2
   * Récupération des données de [Camp To Camp](https://www.camptocamp.org/) et ajout de ces données dans Elastic Search
