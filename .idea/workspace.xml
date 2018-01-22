@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dc2912f-de86-4220-b312-3f741913a3e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/elasticsearch/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/elasticsearch/config/elasticsearch.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/kibana/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/kibana/config/kibana.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/logstash/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/logstash/config/logstash.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/logstash/pipeline/logstash.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/choucas-build/scala_2.12/sbt_1.0/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/choucas-build/scala_2.12/sbt_1.0/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/choucas-build/scala_2.12/sbt_1.0/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/choucas-build/scala_2.12/sbt_1.0/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,8 +92,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="284">
-                <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <first_editor relative-caret-position="320">
+                <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -247,6 +250,12 @@
               <item name="Choucas" type="b2602c69:ProjectViewProjectNode" />
               <item name="Choucas" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Choucas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Choucas" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="kibana" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -733,7 +742,7 @@
       <workItem from="1516062411050" duration="9363000" />
       <workItem from="1516072209341" duration="10083000" />
       <workItem from="1516092885442" duration="11145000" />
-      <workItem from="1516576603280" duration="7671000" />
+      <workItem from="1516576603280" duration="7882000" />
     </task>
     <task id="LOCAL-00001" summary="librairies AKKAAAAA">
       <created>1512554589277</created>
@@ -826,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516584006333</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="docker">
+      <created>1516584319601</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1516584319601</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138385000" />
+    <option name="totallyTimeSpent" value="138596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1301,8 +1317,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="284">
-            <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <first_editor relative-caret-position="320">
+            <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
