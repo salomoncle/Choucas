@@ -35,7 +35,10 @@ docker-compose up
 </code></pre>
 
 ### Run Choucas API
-Use sbt shell with task *run*.
+Use the following command :
+<pre><code>
+./choucas
+</pre></code>
 
 
 

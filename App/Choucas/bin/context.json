@@ -1,0 +1,9 @@
+{
+  "host" : "localhost",
+  "port": "8081",
+  "cluster_length_c2c": 5,
+  "cluster_length_viso": 5,
+  "cluster_length_dbp": 2,
+  "cluster_length_elastic": 2,
+  "elastic_confidence" : 0.3
+}
