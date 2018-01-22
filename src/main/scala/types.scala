@@ -14,7 +14,14 @@ object types {
   case class GetWithId(path: String, id:String)
   case class GetSources(path : String, field : String)
 
-  case class settings(host : String, port : Int, cluster_length : Int)
+  case class settings(
+                       host : String, port : Int,
+                       cluster_length_c2c : Int,
+                       cluster_length_viso : Int,
+                       cluster_length_dbp : Int,
+                       cluster_length_elastic : Int,
+                       elastic_confidence : Double
+                     )
 
   case class JsonFormat(
                              commune: String,

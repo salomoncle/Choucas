@@ -1,3 +1,36 @@
+**Choucas Config**
+----
+Using context.json file.
+Parameters : 
+* "host" : [String] host name for Choucas API 
+* "port" : [String] listening port for Choucas API
+* "cluster_length_c2c" : [Int] length of the actor pool running camp to camp collecting data
+* "cluster_length_viso" : [Int] length of the actor pool running viso rando scraping
+* "cluster_length_bdb" : [Int] length of the actor pool running dbpeadia annotations
+* "cluter_length_elastic" : [Int] length of the actor pool running elastic search requests
+* "elastic_confidence" : [Double] number used in dbpedia spotlight http requests for annotate text in data. Refering to [DBPedia-Lucene-Parameters](https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Lucene---Web-Service-Parameters#Confidence_ConfidenceFilter)
+
+
+Default context.json : 
+<pre><code>
+{
+     "host" : "localhost",
+     "port": "8081",
+     "cluster_length_c2c": 5,
+     "cluster_length_viso": 5,
+     "cluster_length_dbp": 2,
+     "cluster_length_elastic": 2,
+     "elastic_confidence" : 0.3
+}
+           </code></pre>
+
+
+**Running with Docker**
+----
+
+
+
+
 **Choucas API**
 ----
 

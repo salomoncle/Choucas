@@ -39,7 +39,7 @@ case class putDataES(dbp : ActorRef) extends Actor {
         } else ""
 
         val res = if (tag_texte.length>2 && (tag_texte.substring(0,2) != "org") && ((parse(tag_texte) \ "Resources" \ "@surfaceForm") != JNothing )) {
-          val parseTag =  "Tag" -> (parse(tag_texte) \ "Resources" \ "@surfaceForm")
+          val parseTag =  "Tag" -> (parse(tag_texte))
           parse(json) merge render(parseTag)
         } else {
           parse(json) merge parse(compact(render("Tag" -> List(""))))

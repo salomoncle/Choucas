@@ -26,10 +26,10 @@ object HttpServer {
 
     val list = List.range(0, 5)//9971)
     val numbers = Num(list)
-    val actorC2C = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(campToCamp())), name = "getDataC2C")
-    val actorViso = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(visoRando())), name = "getDataViso")
-    val actorDbp = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(dbpedia())), name = "dbpedia")
-    val actorES = system.actorOf(SmallestMailboxPool(settings.cluster_length).props(Props(putDataES(actorDbp))), name="putDataEs")
+    val actorC2C = system.actorOf(SmallestMailboxPool(settings.cluster_length_c2c).props(Props(campToCamp())), name = "getDataC2C")
+    val actorViso = system.actorOf(SmallestMailboxPool(settings.cluster_length_viso).props(Props(visoRando())), name = "getDataViso")
+    val actorDbp = system.actorOf(SmallestMailboxPool(settings.cluster_length_dbp).props(Props(dbpedia(settings.elastic_confidence))), name = "dbpedia")
+    val actorES = system.actorOf(SmallestMailboxPool(settings.cluster_length_elastic).props(Props(putDataES(actorDbp))), name="putDataEs")
 
     val route =
       path("getDataC2C"){
